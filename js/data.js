@@ -251,8 +251,10 @@ const subjectsData = [
                 
                 <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
                     <div style="position:relative; padding-bottom:56.25%; height:0;">
-                        <iframe src="https://www.youtube.com/embed/ZaNqwD-KjK4" 
+                        <iframe src="https://www.youtube.com/embed/A8uQbS9_rQ4" 
+                            title="Operatii pe Strung"
                             style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
                     </div>
                     <div style="padding:1rem;">
@@ -263,8 +265,10 @@ const subjectsData = [
 
                 <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
                     <div style="position:relative; padding-bottom:56.25%; height:0;">
-                         <iframe src="https://www.youtube.com/embed/Jp_nQ_jpm2E" 
+                         <iframe src="https://www.youtube.com/embed/f18q3-R2m7g" 
+                            title="Operatii pe Freza"
                             style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
                     </div>
                     <div style="padding:1rem;">
@@ -275,8 +279,10 @@ const subjectsData = [
 
                 <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
                     <div style="position:relative; padding-bottom:56.25%; height:0;">
-                        <iframe src="https://www.youtube.com/embed/9D1tst0E_zI" 
+                        <iframe src="https://www.youtube.com/embed/o0Vu5Jk_p0o" 
+                            title="Protectia Muncii"
                             style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
                     </div>
                     <div style="padding:1rem;">
