@@ -251,25 +251,29 @@ const subjectsData = [
                 
                 <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
                     <div style="position:relative; padding-bottom:56.25%; height:0;">
-                        <iframe src="https://www.youtube.com/embed/A8uQbS9_rQ4" 
-                            title="Operatii pe Strung"
-                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/H_0M5s1aNwc?si=8n9q7Z6p5r4s3t2u" 
+                            title="Strunjirea - Introducere" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                            style="position:absolute; top:0; left:0; width:100%; height:100%;"></iframe>
                     </div>
                     <div style="padding:1rem;">
                         <h4 style="margin:0; color:var(--text-light);">Introducere în Strunjire</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Prezentarea componentelor și operații de bază pe strung.</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Prezentarea componentelor și operații de bază pe strung (Video: Haas Automation).</p>
                     </div>
                 </div>
 
                 <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
                     <div style="position:relative; padding-bottom:56.25%; height:0;">
-                         <iframe src="https://www.youtube.com/embed/f18q3-R2m7g" 
-                            title="Operatii pe Freza"
-                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen></iframe>
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/U99asIx9-T0?si=9m8l7k6j5h4g3f2d" 
+                            title="Frezarea Verticală" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                            style="position:absolute; top:0; left:0; width:100%; height:100%;"></iframe>
                     </div>
                     <div style="padding:1rem;">
                         <h4 style="margin:0; color:var(--text-light);">Frezarea Verticală</h4>
@@ -279,15 +283,17 @@ const subjectsData = [
 
                 <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
                     <div style="position:relative; padding-bottom:56.25%; height:0;">
-                        <iframe src="https://www.youtube.com/embed/o0Vu5Jk_p0o" 
-                            title="Protectia Muncii"
-                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/u1zbS3z9wKg?si=1a2S3d4F5g6H7j8k" 
+                            title="Siguranta in Atelier" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen
+                            style="position:absolute; top:0; left:0; width:100%; height:100%;"></iframe>
                     </div>
                     <div style="padding:1rem;">
                         <h4 style="margin:0; color:var(--text-light);">Reguli de Siguranță (SSM)</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Cele mai importante reguli de protecția muncii în atelier.</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Reguli generale de siguranță într-un atelier de prelucrări mecanice.</p>
                     </div>
                 </div>
 
