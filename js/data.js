@@ -45,6 +45,16 @@ const subjectsData = [
                 <p>Fiecare procedeu (strunjire, frezare, găurire) are o schemă cinematică specifică ce definește poziția sculei față de piesă și direcțiile de mișcare.</p>
                 <p><strong>Materiale prelucrate:</strong> Oțeluri, fonte, aliaje neferoase (Al, Cu), materiale plastice.</p>
             </div>
+
+            <div class="content-card" style="border-left: 4px solid var(--primary-color);">
+                <h4>💡 Știați că? - Formarea Așchiei</h4>
+                <p>Tipul de așchie ne spune multe despre proces:</p>
+                <ul>
+                    <li><strong>Așchii de rupere (discontinue):</strong> Apar la materiale fragile (fontă, bronz). Sunt mici și se rup ușor.</li>
+                    <li><strong>Așchii de forfecare (continue):</strong> Apar la oțeluri moi, viteză mare. Sunt lungi și pot fi periculoase (necesită spărgător de așchii).</li>
+                    <li><strong>Așchii cu depunere pe tăiș:</strong> Materialul se lipește de vârful cuțitului. Dăunează preciziei! Se evită prin răcire și viteză corectă.</li>
+                </ul>
+            </div>
         `
     },
     {
@@ -65,6 +75,11 @@ const subjectsData = [
                     <h4 style="color:var(--accent-color)">Mașini de Frezat (S7)</h4>
                     <p>Scula (freza) se rotește, iar piesa execută mișcarea de avans. Pentru suprafețe plane, profilate, roți dințate.</p>
                     <img src="images/milling.png" alt="Mașină de Frezat" style="width:100%; border-radius:8px; margin-top:10px;">
+                    <div style="margin-top:10px; font-size:0.9rem; background:rgba(255,255,255,0.05); padding:8px; border-radius:4px;">
+                        <strong>Contra-sens vs. În sens:</strong>
+                        <br>• <em>Contra-sens (Convențional):</em> Recomandat pentru piese brute, cu crustă.
+                        <br>• <em>În sens (Aval):</em> Recomandat pentru finisare, suprafață mai curată.
+                    </div>
                 </div>
                 <div class="info-box">
                     <h4 style="color:var(--accent-color)">Mașini de Rectificat</h4>
@@ -184,6 +199,13 @@ const subjectsData = [
                     <h4 style="color:var(--accent-color)">Scule Așchietoare</h4>
                     <p>Cuțite de strung, freze, burghie, alezoare, broșe, discuri abrazive. Materiale: Oțel Rapid (Rp), Carburi metalice.</p>
                     <img src="images/tools.png" alt="Scule Așchietoare" style="width:100%; border-radius:8px; margin-top:10px;">
+                    <details style="margin-top:10px; cursor:pointer; background:rgba(0,0,0,0.2); padding:5px; border-radius:4px;">
+                        <summary style="font-weight:bold; color:var(--accent-color);">Geometria Cuțitului</summary>
+                        <ul style="font-size:0.9rem; margin-top:5px; padding-left:20px;">
+                            <li><strong>Unghiul de așezare (α):</strong> Evită frecarea spatelui cuțitului de piesă (cca. 6-8°).</li>
+                            <li><strong>Unghiul de degajare (γ):</strong> Ajută la alunecarea așchiei. Mai mare pentru materiale moi.</li>
+                        </ul>
+                    </details>
                 </div>
                 <div class="info-box">
                     <h4 style="color:var(--accent-color)">Dispozitive</h4>
@@ -236,6 +258,62 @@ const subjectsData = [
             <div class="content-card">
                 <h4>Protecția Mediului</h4>
                 <p>Colectarea selectivă a deșeurilor (șpan metalic, uleiuri uzate, emulsii de răcire). Reciclarea materialelor.</p>
+            </div>
+        `
+    },
+    {
+        id: "troubleshooting",
+        title: "Ghid Defecte & Soluții",
+        icon: "construct-outline",
+        content: `
+            <h2>Ghid Practic: Defecte și Remedieri</h2>
+            <p>Cele mai frecvente probleme în prelucrarea prin așchiere și cum să le rezolvați.</p>
+
+            <div class="grid-2-cols" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+                
+                <div class="content-card" style="background:rgba(239, 68, 68, 0.1); border-left:4px solid var(--error-color);">
+                    <h4>🛑 Suprafață Rugoasă (Vibrații)</h4>
+                    <p><strong>Cauze:</strong></p>
+                    <ul style="font-size:0.9rem;">
+                        <li>Piesa nu este fixată rigid.</li>
+                        <li>Scula este prea lungă în consolă.</li>
+                        <li>Turație prea mare pentru avansul dat.</li>
+                    </ul>
+                    <p><strong>Soluție:</strong> Reduceți turația, rigidizați prinderea, folosiți o sculă mai scurtă.</p>
+                </div>
+
+                <div class="content-card" style="background:rgba(245, 158, 11, 0.1); border-left:4px solid #F59E0B;">
+                    <h4>⚠️ Dimensiuni Incorecte</h4>
+                    <p><strong>Cauze:</strong></p>
+                    <ul style="font-size:0.9rem;">
+                        <li>Uzura vârfului sculei.</li>
+                        <li>Joc în sania transversală a mașinii (backlash).</li>
+                        <li>Eroare de măsurare (șubler necalibrat).</li>
+                    </ul>
+                    <p><strong>Soluție:</strong> Verificați și schimbați scula, eliminați jocul din manivelă înainte de cota finală.</p>
+                </div>
+
+                <div class="content-card" style="background:rgba(59, 130, 246, 0.1); border-left:4px solid var(--primary-color);">
+                    <h4>🔵 Suprafața prezintă "Arsură"</h4>
+                    <p><strong>Cauze:</strong></p>
+                    <ul style="font-size:0.9rem;">
+                        <li>Viteză de așchiere prea mare.</li>
+                        <li>Răcire insuficientă.</li>
+                        <li>Sculă tocită care freacă în loc să taie.</li>
+                    </ul>
+                    <p><strong>Soluție:</strong> Reduceți viteza (v), porniți emulsia de răcire, ascuțiți scula.</p>
+                </div>
+
+                <div class="content-card" style="background:rgba(16, 185, 129, 0.1); border-left:4px solid var(--success-color);">
+                    <h4>✅ Conicitate nedorită (la strunjire)</h4>
+                    <p><strong>Cauze:</strong></p>
+                    <ul style="font-size:0.9rem;">
+                        <li>Păpușa mobilă nu este centrată.</li>
+                        <li>Piesa flexează sub forța de așchiere (la piese lungi).</li>
+                    </ul>
+                    <p><strong>Soluție:</strong> Aliniați păpușa mobilă, folosiți luneta pentru piese lungi.</p>
+                </div>
+
             </div>
         `
     }
