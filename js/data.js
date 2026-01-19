@@ -83,11 +83,22 @@ const subjectsData = [
                 </div>
                 <div class="info-box">
                     <h4 style="color:var(--accent-color)">Mașini de Rectificat</h4>
-                    <p>Pentru finisarea suprafețelor cu precizie ridicată, folosind discuri abrazive.</p>
+                    <p>Folosesc discuri abrazive pentru finisare de precizie (0.001 - 0.005 mm).</p>
+                    <div style="font-size:0.9rem; margin-top:5px; padding-left:10px; border-left:2px solid var(--accent-color);">
+                        • <strong>Rectificare Plană:</strong> Pentru suprafețe drepte (mese, ghidaje).<br>
+                        • <strong>Rectificare Cilindrică:</strong> Pentru axe, bucșe (exterior/interior).
+                    </div>
                 </div>
                 <div class="info-box">
-                    <h4 style="color:var(--accent-color)">Rabotat & Mortezat</h4>
-                    <p>Prelucrarea prin așchiere cu mișcare rectilinie alternativă (pentru canale, suprafețe plane lungi).</p>
+                    <h4 style="color:var(--accent-color)">Mașini de Rabotat și Mortezat</h4>
+                    <p>Pentru suprafețe plane lungi și canale.</p>
+                    <details>
+                        <summary style="cursor:pointer; color:var(--text-light); font-weight:bold;">Rabotare vs. Mortezare</summary>
+                        <p style="font-size:0.9rem; margin-top:5px;">
+                            <strong>Rabotare:</strong> Mișcare orizontală. Bună pentru piese lungi.<br>
+                            <strong>Mortezare:</strong> Mișcare verticală. Ideală pentru canale de pană interioare.
+                        </p>
+                    </details>
                 </div>
             </div>
         `
@@ -106,6 +117,10 @@ const subjectsData = [
                     <li><strong>Batiuri:</strong> Structura de rezistență, de obicei din fontă pentru amortizarea vibrațiilor.</li>
                     <li><strong>Ghidaje:</strong> Asigură precizia mișcării subansamblelor mobile (săniilor, meselor). Pot fi de alunecare sau de rostogolire.</li>
                 </ul>
+                <div style="background:rgba(255,255,255,0.05); padding:10px; border-radius:6px; margin-top:10px;">
+                    <strong>💡 De ce Fontă?</strong>
+                    <p style="font-size:0.9rem; margin-top:5px;">Fonta cenușie este folosită pentru batiuri pentru că <em>amortizează vibrațiile</em> mult mai bine decât oțelul. Formele ghidajelor: Coadă de rândunică (frezare), V-plan (strunjire).</p>
+                </div>
             </div>
 
             <div class="content-card">
@@ -119,6 +134,27 @@ const subjectsData = [
                 </ul>
             </div>
             
+            <div class="content-card">
+                <h3>Documentația Tehnologică</h3>
+                <p>Totalitatea actelor necesare fabricației.</p>
+                <ul>
+                    <li><strong>Desenul de execuție:</strong> Conține forma, dimensiunile, toleranțele și materialul.</li>
+                    <li><strong>Fișa tehnologică:</strong> "Rețeta" de fabricație.</li>
+                    <li><strong>Planul de operații:</strong> Ordinea logică a prelucrărilor.</li>
+                </ul>
+                
+                <div style="background:var(--bg-card); padding:1rem; border-radius:8px; margin-top:1rem; border:1px dashed var(--text-muted);">
+                    <h4 style="margin-top:0;">📝 Exemplu Structură Fișă Tehnologică</h4>
+                    <ol style="font-size:0.9rem; padding-left:1.2rem;">
+                        <li><strong>Antet:</strong> Denumire piesă, Material (ex: OL45), Nr. bucăți.</li>
+                        <li><strong>Operația 1 (Debitare):</strong> Tăiere semifabricat la cotă.</li>
+                        <li><strong>Operația 2 (Strunjire degroșare):</strong> Îndepărtare material plus (v=... n=...).</li>
+                        <li><strong>Operația 3 (Tratament Termic):</strong> Călire/Revenire (opțional).</li>
+                        <li><strong>Operația 4 (Rectificare):</strong> Aducere la cota finală precisă.</li>
+                        <li><strong>Control Final (CTC):</strong> Verificare dimensiuni.</li>
+                    </ol>
+                </div>
+            </div>
             <div class="content-card">
                 <h4>Sisteme de Comandă (S15)</h4>
                 <ul>
