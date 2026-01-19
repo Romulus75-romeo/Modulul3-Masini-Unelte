@@ -250,41 +250,41 @@ const subjectsData = [
             <div class="grid-2-cols" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
                 
                 <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
-                    <a href="https://www.youtube.com/watch?v=H_0M5s1aNwc" target="_blank" style="display:block; position:relative; text-decoration:none;">
-                        <img src="https://img.youtube.com/vi/H_0M5s1aNwc/maxresdefault.jpg" alt="Strunjirea" style="width:100%; display:block; opacity:0.8; transition:opacity 0.2s;">
+                    <a href="https://www.youtube.com/watch?v=Za0YGOLf4Wk" target="_blank" style="display:block; position:relative; text-decoration:none;">
+                        <img src="https://img.youtube.com/vi/Za0YGOLf4Wk/hqdefault.jpg" alt="Strunjirea" style="width:100%; display:block; opacity:0.8; transition:opacity 0.2s;">
                         <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:rgba(0,0,0,0.7); padding:15px; border-radius:50%;">
                             <ion-icon name="play" style="color:white; font-size:32px;"></ion-icon>
                         </div>
                     </a>
                     <div style="padding:1rem;">
                         <h4 style="margin:0; color:var(--text-light);">Introducere în Strunjire</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Prezentarea componentelor și operații de bază pe strung. (Click pentru vizionare pe YouTube)</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Bazele utilizării unui strung manual - MakeHaven. (Click pentru vizionare)</p>
                     </div>
                 </div>
 
                 <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
-                   <a href="https://www.youtube.com/watch?v=U99asIx9-T0" target="_blank" style="display:block; position:relative; text-decoration:none;">
-                        <img src="https://img.youtube.com/vi/U99asIx9-T0/maxresdefault.jpg" alt="Frezarea" style="width:100%; display:block; opacity:0.8; transition:opacity 0.2s;">
+                   <a href="https://www.youtube.com/watch?v=Cwm-L9n-loE" target="_blank" style="display:block; position:relative; text-decoration:none;">
+                        <img src="https://img.youtube.com/vi/Cwm-L9n-loE/hqdefault.jpg" alt="Frezarea" style="width:100%; display:block; opacity:0.8; transition:opacity 0.2s;">
                         <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:rgba(0,0,0,0.7); padding:15px; border-radius:50%;">
                             <ion-icon name="play" style="color:white; font-size:32px;"></ion-icon>
                         </div>
                     </a>
                     <div style="padding:1rem;">
                         <h4 style="margin:0; color:var(--text-light);">Frezarea Verticală</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Demonstrație de frezare plană și de profiler. (Click pentru vizionare pe YouTube)</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Tutorial de bază frezare verticală - Blondihacks. (Click pentru vizionare)</p>
                     </div>
                 </div>
 
                 <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
-                    <a href="https://www.youtube.com/watch?v=u1zbS3z9wKg" target="_blank" style="display:block; position:relative; text-decoration:none;">
-                        <img src="https://img.youtube.com/vi/u1zbS3z9wKg/hqdefault.jpg" alt="SSM" style="width:100%; display:block; opacity:0.8; transition:opacity 0.2s;">
+                    <a href="https://www.youtube.com/watch?v=rcaJOM6tBQA" target="_blank" style="display:block; position:relative; text-decoration:none;">
+                        <img src="https://img.youtube.com/vi/rcaJOM6tBQA/hqdefault.jpg" alt="SSM" style="width:100%; display:block; opacity:0.8; transition:opacity 0.2s;">
                          <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:rgba(0,0,0,0.7); padding:15px; border-radius:50%;">
                             <ion-icon name="play" style="color:white; font-size:32px;"></ion-icon>
                         </div>
                     </a>
                     <div style="padding:1rem;">
                         <h4 style="margin:0; color:var(--text-light);">Reguli de Siguranță (SSM)</h4>
-                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Reguli generale de siguranță într-un atelier. (Click pentru vizionare pe YouTube)</p>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Siguranța în atelierul mecanic - Partea 1. (Click pentru vizionare)</p>
                     </div>
                 </div>
 
