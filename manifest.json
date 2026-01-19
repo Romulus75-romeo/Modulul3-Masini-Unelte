@@ -1,0 +1,21 @@
+{
+    "name": "M3 - Mașini Unelte",
+    "short_name": "M3 Unelte",
+    "description": "Platformă educațională pentru Modulul 3 - Mașini Unelte Convenționale",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#4F46E5",
+    "icons": [
+        {
+            "src": "https://cdn-icons-png.flaticon.com/512/3063/3063822.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://cdn-icons-png.flaticon.com/512/3063/3063822.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

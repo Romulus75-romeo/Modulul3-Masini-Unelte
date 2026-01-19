@@ -88,6 +88,18 @@ document.addEventListener('DOMContentLoaded', () => {
             testItem.classList.add('active');
         };
         subjectList.appendChild(testItem);
+
+        // 3. Calculator Link
+        const calcItem = document.createElement('div');
+        calcItem.className = 'nav-item';
+        calcItem.innerHTML = `<ion-icon name="calculator-outline"></ion-icon> Calculator Așchiere`;
+        calcItem.onclick = () => {
+            loadCalculatorView();
+            sidebar.classList.remove('open');
+            document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            calcItem.classList.add('active');
+        };
+        subjectList.appendChild(calcItem);
     }
 
     function loadTestsView() {
@@ -119,6 +131,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
             html += `</div>`;
             contentDisplay.innerHTML = html;
+            contentDisplay.style.opacity = '1';
+        }, 150);
+    }
+
+    function loadCalculatorView() {
+        contentDisplay.style.opacity = '0';
+        setTimeout(() => {
+            currentSectionTitle.innerText = "Calculator Tehnologic";
+            contentDisplay.innerHTML = `
+                <h2>Calculator Regim Așchiere</h2>
+                <div style="background:var(--bg-card); padding:2rem; border-radius:12px; border:1px solid var(--border-color); max-width:600px;">
+                    <div style="margin-bottom:1.5rem;">
+                        <label style="display:block; margin-bottom:0.5rem; color:#ccc;">Diametrul Piesei (D) [mm]</label>
+                        <input type="number" id="calc-d" placeholder="Ex: 50" style="width:100%; padding:10px; border-radius:8px; border:1px solid var(--border-color); background:rgba(255,255,255,0.05); color:white;">
+                    </div>
+                    <div style="margin-bottom:1.5rem;">
+                        <label style="display:block; margin-bottom:0.5rem; color:#ccc;">Viteza de Așchiere (v) [m/min]</label>
+                        <input type="number" id="calc-v" placeholder="Ex: 30" style="width:100%; padding:10px; border-radius:8px; border:1px solid var(--border-color); background:rgba(255,255,255,0.05); color:white;">
+                    </div>
+                    <button id="calc-btn" class="btn-primary full-width">Calculează Turația (n)</button>
+                    
+                    <div id="calc-result" style="margin-top:2rem; padding:1.5rem; background:rgba(255,255,255,0.05); border-radius:8px; text-align:center; display:none;">
+                        <span style="color:#aaa;">Turația necesară:</span>
+                        <div style="font-size:2.5rem; font-weight:bold; color:var(--accent-color); margin-top:0.5rem;">
+                            <span id="result-val">0</span> <span style="font-size:1rem;">rot/min</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Logic
+            document.getElementById('calc-btn').addEventListener('click', () => {
+                const D = parseFloat(document.getElementById('calc-d').value);
+                const v = parseFloat(document.getElementById('calc-v').value);
+                if (D && v) {
+                    // n = (1000 * v) / (PI * D)
+                    const n = Math.round((1000 * v) / (Math.PI * D));
+                    document.getElementById('result-val').innerText = n;
+                    document.getElementById('calc-result').style.display = 'block';
+                } else {
+                    alert("Introduceți valori valide!");
+                }
+            });
+
             contentDisplay.style.opacity = '1';
         }, 150);
     }

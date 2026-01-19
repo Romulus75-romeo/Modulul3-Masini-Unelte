@@ -238,5 +238,54 @@ const subjectsData = [
                 <p>Colectarea selectivă a deșeurilor (șpan metalic, uleiuri uzate, emulsii de răcire). Reciclarea materialelor.</p>
             </div>
         `
+    },
+    {
+        id: "video_gallery",
+        title: "Video Demonstrații",
+        icon: "videocam-outline",
+        content: `
+            <h2>Galerie Video Educațională</h2>
+            <p>Demonstrații practice ale operațiilor de prelucrare.</p>
+
+            <div class="grid-2-cols" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+                
+                <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
+                    <div style="position:relative; padding-bottom:56.25%; height:0;">
+                        <iframe src="https://www.youtube.com/embed/ZaNqwD-KjK4" 
+                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <div style="padding:1rem;">
+                        <h4 style="margin:0; color:var(--text-light);">Introducere în Strunjire</h4>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Prezentarea componentelor și operații de bază pe strung.</p>
+                    </div>
+                </div>
+
+                <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
+                    <div style="position:relative; padding-bottom:56.25%; height:0;">
+                         <iframe src="https://www.youtube.com/embed/Jp_nQ_jpm2E" 
+                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <div style="padding:1rem;">
+                        <h4 style="margin:0; color:var(--text-light);">Frezarea Verticală</h4>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Demonstrație de frezare plană și de profiler.</p>
+                    </div>
+                </div>
+
+                <div class="video-card" style="background:var(--bg-card); border-radius:12px; overflow:hidden;">
+                    <div style="position:relative; padding-bottom:56.25%; height:0;">
+                        <iframe src="https://www.youtube.com/embed/9D1tst0E_zI" 
+                            style="position:absolute; top:0; left:0; width:100%; height:100%; border:none;" 
+                            allowfullscreen></iframe>
+                    </div>
+                    <div style="padding:1rem;">
+                        <h4 style="margin:0; color:var(--text-light);">Reguli de Siguranță (SSM)</h4>
+                        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Cele mai importante reguli de protecția muncii în atelier.</p>
+                    </div>
+                </div>
+
+            </div>
+        `
     }
 ];
